@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import TodoItem from './app'
+import App from './app'
 
 const root = createRoot(document.getElementById('app'))
-root.render(<TodoItem />)
+root.render(<App />)

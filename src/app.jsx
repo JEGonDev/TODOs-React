@@ -1,11 +1,26 @@
-function TodoItem(){
-    return (
-        <li>
-            <span>V</span>
-            <p>Tomarse un litro de suavitel</p>
-            <span>X</span>
-        </li>
+import { TodoCounter } from './TodoCounter'
+import { TodoSearch } from './TodoSearch'
+import { TodoList } from './TodoList'
+import { TodoItem } from './TodoItem'
+import { CreateTodoButton } from './CreateTodoButton'
+
+
+function App(){
+    return(
+        <div className="className App">
+
+        <TodoCounter />
+        <TodoSearch />
+
+        <TodoList>
+            <TodoItem />
+            <TodoItem />
+            <TodoItemtem />
+        </TodoList>
+
+        <CreateTodoButton />
+        </div>
     )
 }
 
-export default TodoItem
+export default App
