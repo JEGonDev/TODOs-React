@@ -1,8 +1,8 @@
-function TodoItem(){
+function TodoItem(arroz){
     return (
         <li>
             <span>V</span>
-            <p>Tomarse un litro de suavitel</p>
+            <p>{arroz.name}</p>
             <span>X</span>
         </li>
     )
