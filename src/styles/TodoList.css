@@ -1,0 +1,9 @@
+ul {
+    display: flex;              /* Activa Flexbox */
+    justify-content: center;    /* Centra horizontalmente */
+    align-items: center;        /* Centra verticalmente (si es necesario) */
+    list-style: none;          /* Quita el estilo de lista por defecto */
+    padding: 0;                /* Elimina el padding por defecto */
+    margin: 0;  
+    flex-direction: column;
+}

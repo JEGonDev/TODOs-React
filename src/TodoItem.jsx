@@ -1,6 +1,8 @@
+import './styles/TodoItem.css'
+
 function TodoItem(arroz){
     return (
-        <li>
+        <li className='todoItem'>
             <span>V</span>
             <p>{arroz.name}</p>
             <span>X</span>

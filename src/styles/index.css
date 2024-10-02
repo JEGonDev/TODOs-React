@@ -1,0 +1,11 @@
+body {
+    margin: 0;              /* Elimina los márgenes predeterminados */
+    padding: 0;             /* Elimina los rellenos (padding) predeterminados */
+    font-family: Arial, sans-serif;  /* Fuente de la página */
+    background-color: #c7c582;  /* Color de fondo */
+    color: #212121;            /* Color del texto */
+    line-height: 1.6;       /* Altura de las líneas */
+    font-size: 16px;        /* Tamaño de fuente */
+    text-align: center;     /* Centrar el contenido del cuerpo */
+    overflow-x: hidden;     /* Evita el desbordamiento horizontal */
+}

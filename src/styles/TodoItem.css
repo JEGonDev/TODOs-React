@@ -1,0 +1,23 @@
+li {
+    align-items: center;
+    align-content: center;
+}
+
+.todoItem {
+    justify-content: space-around;
+    display: flex;
+    background-color: #ae9e52;
+    margin-top: 1.2rem;
+    width: 20%;
+    border-radius: 1rem;
+}
+
+span {
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: cursive;
+}
