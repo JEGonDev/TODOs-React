@@ -14,15 +14,39 @@ const todos = [
 ];  
 
 function RenderTodos(){
+
+    const [todo, setTodo] = React.useState(todos)
+    const [searchValue, setSearchValue] = React.useState('')
+    const completedTodos = todo.filter(
+        todo => !!todo.completed).length
+    const totalTodos = todo.length
+    const searchedTodos = todo.filter(
+        (todo) => {
+            return todo.name.toLowerCase().includes(
+                searchValue.toLowerCase())
+        }
+    )
+
     return(
         <React.Fragment>
 
-            <TodoCounter completed={5} total={15}/>
-            <TodoSearch />
+            <TodoCounter 
+                completed={completedTodos} 
+                total={totalTodos}
+            />
+
+            <TodoSearch 
+                searchValue={searchValue} 
+                setSearchValue={setSearchValue}
+            />
 
             <TodoList>
-                {todos.map(todo =>(
-                    <TodoItem key={todo.id} name={todo.name} completed={todo.completed}/>
+                {searchedTodos.map(todo =>(
+                    <TodoItem 
+                        key={todo.id} 
+                        name={todo.name} 
+                        completed={todo.completed}
+                    />
                 ))}
             </TodoList>
 
