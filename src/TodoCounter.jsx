@@ -1,9 +1,9 @@
 import './styles/TodoCounter.css'
 
-function TodoCounter(props) {
+function TodoCounter({completed , total}) {
     return(
         <h1>
-            Has completado {props.completed} de {props.total} TODOs
+            Has completado {completed} de {total} TODOs
         </h1>
     )
 }
